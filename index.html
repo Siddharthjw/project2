@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>CHAT APP</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>CHAT APP</h1>
+        </div>
+        <div class="login-container">
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Enter your username">
+            <label for="passkey">Passkey:</label>
+            <input type="password" id="passkey" placeholder="Enter passkey">
+            <button onclick="authenticate()">Enter</button>
+        </div>
+    </div>
+
+    <div class="chat-container hidden">
+        <div class="navbar">
+            <button onclick="newChat()">New Chat</button>
+            <button onclick="deleteChat()">Delete Chat</button>
+            <button onclick="showAbout()">About</button>
+            <button onclick="changeBackground()">Change Background</button>
+        </div>
+        <div class="chat-box" id="chat-box"></div>
+
+        <div class="message-input-container">
+            <input type="text" id="message" class="message-input" placeholder="Type your message...">
+            <button class="send-button" onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -43,7 +43,7 @@ function deleteChat() {
 function showAbout() {
     // Logic for displaying information about the chat app
     // Implement as needed
-    alert("Chat App v1.0\nCreated by [Your Name]");
+    alert("Chat App v1.0\nCreated by [Siddharth Jagwan]");
 }
 
 function changeBackground() {
